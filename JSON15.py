@@ -51,5 +51,7 @@ big_object = {
     ]
 }
 result = pickle.dumps(big_object)
-
 print(result)
+
+big_object_recovery = pickle.loads(result)
+print(big_object_recovery)
